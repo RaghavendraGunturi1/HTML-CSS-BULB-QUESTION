@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB</title>
+</head>
+<body>
+    <script>
+        function turnOnOff() {
+            let image = document.getElementById('Image');
+            if (image.src.match('bulb-off.png')) {
+                image.src = 'bulb-on.png';
+            } else {
+                image.src = 'bulb-off.png';
+            }
+        }
+    </script>
+    <img id="Image" onclick="turnOnOff()" src="bulb-off.png">
+    <p>Click the bulb image to turn it on and off.</p>
+    
+</body>
+</html>
